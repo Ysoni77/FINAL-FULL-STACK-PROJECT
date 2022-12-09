@@ -1,0 +1,31 @@
+<div class="col-md-6 offset-md-3 my-4 justify-content-center container h-auto w-80">
+    <h4 class="d-flex justify-content-center">Add Students</h4>
+    <form #addform="ngForm" class="container" (ngSubmit)="adddata(addform)">
+        <div class="form-group">
+            <label>Id</label>
+            <input type="number" class="form-control" id="sid" #sid (ngModel)="sid" name="sid">
+        </div>
+        <pre></pre>
+
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" id="sname" #sname (ngModel)="sname" name="sname">
+        </div>
+        <pre></pre>
+
+        <div class="form-group">
+            <label>Courses</label>
+            <input type="text" class="form-control" id="scourse" #scourse (ngModel)="scourse" name="scourse">
+        </div>
+        <pre></pre>
+
+        <div class="form-group">
+            <label>Email Id</label>
+            <input type="email" class="form-control" id="semail" #semail (ngModel)="semail" name="semail">
+        </div>
+        <pre></pre>
+
+        <button type="submit" class="btn btn-primary">Add</button>
+
+    </form>
+</div>
